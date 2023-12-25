@@ -32,9 +32,35 @@
 //     console.log(a);
 
 // Q3. Differentiate between unary,binary, and ternary operators in javascript.Give examples of each.
-// ans. 
+// ans. What is a Unary Operator?
+        These operators require one operand for operation.
+        Providing two or more can result in a syntax error. 
+        Here are some examples of operators that fall under this category.
+            example: 1.the typeof operator
+                        The typeof operator returns the data type of a value. 
+                        It requires only one operand. Here's an example:typeof "hello"
+        What is a Binary Operator?
+        These operators require two operands for operation.
+        If one or more than two operands are provided, such operators result in a syntax error.
+        example: 1.Arithmetic operator :-10 + 20,10-5,2*5
+                2.Comparison Operators :-10>20,20<80
+        What is a Ternary Operator?
+        These operators require three operands. In JavaScript, there is one operator that falls under this category – the conditional operator.
+        example: Conditional Operator
+            const score = 80
+            const scoreRating = score > 50 ? "Good" : "Poor"
 
-//Q5. simple interest calculation
+//Q4. Discuss the precedence and associativity of operators in javascript.Why is understanding these concepts important?
+// ans: Operator precedence refers to the priority given to operators while parsing a statement that has more than one operator performing operations in it. 
+        Operators with higher priorities are resolved first.
+            Precedence and Associativity
+        Associativity in general states that irrespective of the order of operands for a given operation the result remains the same.
+        Precedence is used to tell the compiler what operations should be performed first.
+        ( 5 + 5 ) + 2 = 4 + ( 2 + 5 )
+        ( 6 >= 3 ) or ( 2 != 4 )    
+
+
+//Q5. Write a javascript program to calculates the simple interest using the formula simple interest =(principal*rate*time)/100.
 
 // let p = 20000;
 // let r = 10;
@@ -42,7 +68,7 @@
 // let SI = (p * r * t)/100;
 // console.log("Simple Interest = "+SI);
 
-//Q6. CALCULATE BMI 
+//Q6. Write a javascript program to calculate the body mass index(BMI) using the formula BMI =weight(kg)/height*height. 
 
 function calculateBMI(weight,height){
     const heightInMeters = height/100;
